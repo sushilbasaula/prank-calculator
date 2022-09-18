@@ -1,0 +1,160 @@
+body {
+    margin:0;
+}
+
+
+
+
+
+
+
+
+.wrapper {
+    /* background: linear-gradient(180deg, rgba(187, 190, 4, 0.38) , rgba (4, 255, 255, 0.36 )); */
+    background-color: aqua;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle {
+    background:linear-gradient(to right, blue, purple);
+    width:150px;
+    height:150px;
+    border-radius:50%;
+
+    position: relative;
+    left: 80px;
+    top: 250px;
+
+}
+.calculator {
+    background: rgba(217, 21, 21, 0.559);
+    border-radius:10px;
+    width:400px;
+    padding: 2rem 1.5rem;
+
+    backdrop-filter: blur(8.5px);
+    
+
+
+    /* grid */
+    display: grid;
+    gap: 5px;
+
+    grid-template-areas: 
+    "display display display display"
+    "ac c perc divide"
+    "btn-7 btn-8 btn-9 multi"
+    "btn-4 btn-5 btn-6 sub"
+    "btn-1 btn-2 btn-3 plus"
+    "btn-0 btn-0 dot ans";
+
+}
+
+.calculator div {
+    background:rgb(128, 128, 128);
+    height:50px;
+    margin: 10px;;
+
+    display:flex;
+    justify-content: center;
+    align-items:center;
+
+    filter: drop-shadow(-12px 12px 14px green);
+    border-radius: 5px;
+
+}
+
+.calculator .display {
+    grid-area: display;
+    display:flex;
+    justify-content: flex-end;
+    padding: 1rem;
+    font-family: 'Orbitron', sans-serif;
+    background:white;
+    border-radius:
+    
+}
+
+.display { 
+    grid-area: display;
+}
+
+.btn-ac {
+    grid-area:ac;
+}
+
+.btn-c {
+    grid-area:c;
+}
+
+.btn-perc {
+    grid-area:perc;
+}
+
+.btn-divide{
+    grid-area:divide;
+}
+
+.btn-7 {
+    grid-area:btn-7;
+}
+
+.btn-8 {
+    grid-area:btn-8;
+}
+
+.btn-9 {
+    grid-area:btn-9;
+}
+
+.btn-multi {
+    grid-area:multi;
+}
+
+.btn-4{
+    grid-area:btn-4;
+}
+
+.btn-5 {
+    grid-area:btn-5;
+}
+
+.btn-6 {
+    grid-area:btn-6;
+}
+
+.btn-sub {
+    grid-area:sub;
+}
+
+.btn-1 {
+    grid-area:btn-1;
+}
+
+.btn-2 {
+    grid-area:btn-2;
+}
+
+.btn-3 {
+    grid-area:btn-3;
+}
+
+.btn-plus {
+    grid-area:plus;
+}
+
+.btn-0{
+    grid-area:btn-0;
+}
+
+.btn-dot {
+    grid-area:dot;
+}
+
+.btn-ans {
+    grid-area:ans;
+}
+
